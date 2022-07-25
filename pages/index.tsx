@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
 
 import {
-  degrees, grayscale, PDFDocument, rgb, StandardFonts,
+  degrees,
+  grayscale,
+  PDFDocument,
+  rgb,
+  StandardFonts,
 } from 'pdf-lib';
 import download from 'downloadjs';
 import styles from '../styles/Home.module.css';
@@ -20,7 +24,7 @@ const Home: NextPage = () => {
     const fontSize = 24;
     const headerHeight = 50;
 
-    const url = 'https://firebasestorage.googleapis.com/v0/b/cientelive.appspot.com/o/paperFinalVersion%2F5925e4da-35fe-4400-b6cb-c341749805dc.pdf?alt=media&token=a04c3c52-5a16-46a6-9fa6-9b1a3598990a';
+    const url = 'https://firebasestorage.googleapis.com/v0/b/cientestudio.appspot.com/o/papers%2F454dca06-9eb6-438e-b778-b5b191f1274b.pdf?alt=media&token=441fdb86-015d-49e4-9ec9-a0d5b93dc08a';
     const existingPdfBytes = await fetch(url).then((res) => res.arrayBuffer());
 
     // Load a PDFDocument from the existing PDF bytes
